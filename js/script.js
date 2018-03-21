@@ -9,6 +9,13 @@ document.onkeydown = function() {
     flg = true;
   }
 }
+document.touchmove = function() {
+  if (flg) {
+    flg = false;
+  }else{
+    flg = true;
+  }
+}
 document.getElementById("palet1").addEventListener("click",clipColorcode,false);
 document.getElementById("palet2").addEventListener("click",clipColorcode,false);
 document.getElementById("palet3").addEventListener("click",clipColorcode,false);
