@@ -2,17 +2,24 @@
 window.onload = function() {
   setInterval(chgPaletsColor,1000);
 }
-document.onkeydown = function() {
+
+document.onkeydown = chgFlg;
+document.getElementById("palet1").addEventListener("touchmove",chgFlg,false);
+document.getElementById("palet2").addEventListener("touchmove",chgFlg,false);
+document.getElementById("palet3").addEventListener("touchmove",chgFlg,false);
+document.getElementById("palet4").addEventListener("touchmove",chgFlg,false);
+document.getElementById("palet1").addEventListener("click",clipColorcode,false);
+document.getElementById("palet2").addEventListener("click",clipColorcode,false);
+document.getElementById("palet3").addEventListener("click",clipColorcode,false);
+document.getElementById("palet4").addEventListener("click",clipColorcode,false);
+
+function chgFlg() {
   if (flg) {
     flg = false;
   }else{
     flg = true;
   }
 }
-document.getElementById("palet1").addEventListener("click",clipColorcode,false);
-document.getElementById("palet2").addEventListener("click",clipColorcode,false);
-document.getElementById("palet3").addEventListener("click",clipColorcode,false);
-document.getElementById("palet4").addEventListener("click",clipColorcode,false);
 
 function chgPaletsColor() {
   if(flg) {
