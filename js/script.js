@@ -3,7 +3,7 @@ window.onload = function() {
   setInterval(chgPaletsColor,1000);
 }
 
-//スクロールの防止
+//touchmoveによるスクロールの防止
 document.body.addEventListener('touchmove', function(event) {
   event.preventDefault();
 }, false); 
