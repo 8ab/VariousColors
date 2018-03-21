@@ -1,6 +1,6 @@
 # VariousColors
 
-You meet various colors.
+You can meet various colors.
 
 ## How to use
 
