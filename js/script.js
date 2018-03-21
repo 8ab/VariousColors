@@ -3,6 +3,11 @@ window.onload = function() {
   setInterval(chgPaletsColor,1000);
 }
 
+//スクロールの防止
+document.body.addEventListener('touchmove', function(event) {
+  event.preventDefault();
+}, false); 
+
 document.onkeydown = chgFlg;
 document.getElementById("palet1").addEventListener("touchmove",chgFlg,false);
 document.getElementById("palet2").addEventListener("touchmove",chgFlg,false);
