@@ -2,6 +2,8 @@
 
 You can meet various colors.
 
+[VariousColors](https://8ab.github.io/VariousColors/)
+
 ## How to use
 
 Press any key(or swipe the screen) to stop.
