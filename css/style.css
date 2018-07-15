@@ -7,7 +7,7 @@
 html,body {
   width: 100%;
   height: 100%;
-  background-color: #FF8888;
+  background-color: #FFFFFF;
   /*chromeで画面下に余剰エリアが発生することへの対応*/
   overflow:hidden;
 }
@@ -18,7 +18,6 @@ html,body {
   text-align: center;
   color: white;
   float: left;
-
 }
 .palet:before {
   content: attr(title);
