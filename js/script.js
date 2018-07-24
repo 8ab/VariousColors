@@ -35,6 +35,7 @@ function chgPaletsColor() {
       rgb = getRandColor();
       element.style.backgroundColor = rgb;
       element.title = rgb;
+      element.style.fontSize = "100%"
     }
   }
 }
@@ -65,7 +66,8 @@ function clipColorcode(event) {
   if (!result) {
     alert("このブラウザは対応していません。");
   } else {
-    event.target.title = "'" + hexRGB + "'" + " copied!"
+    event.target.title = "'" + hexRGB + "'" + " copied to clipboard!"
+    eventStyle.fontSize = "50%"
   }
 }
 
